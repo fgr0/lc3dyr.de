@@ -36,15 +36,15 @@ section {
     color:               silver;
 }
 
-section header {
+header {
     font-size:           64px;
     color:               #008C9E;
 }
-section header a {
+header a {
     color:               #008C9E;
     text-decoration:     none;
 }
-section header a:hover {
+header a:hover {
     color:               #008C9E;
     text-decoration:     none;
 }

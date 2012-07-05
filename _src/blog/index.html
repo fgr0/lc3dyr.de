@@ -1,0 +1,11 @@
+---
+layout: wire
+title: drug
+---
+    {% for post in site.posts %}
+        {% assign content = post.content %}
+            <article>
+            <header><a href="{{ site.domain }}{{ post.url }}">{{ post.title }}</a></header>
+                    {{ content }}
+            </article>
+    {% endfor %}

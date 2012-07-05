@@ -1,0 +1,17 @@
+source:        _src
+destination:   _site
+pygments:      true
+
+markdown:      maruku
+permalink:     pretty
+
+maruku:
+  use_tex:     false
+  use_divs:    false
+  png_engine:  blahtex
+  png_dir:     images/latex
+  png_url:     /images/latex
+
+# custom Variables
+title: lawn of laerador
+domain: "http://lc3dyr.de"

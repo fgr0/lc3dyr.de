@@ -38,14 +38,14 @@ section {
 
 header {
     font-size:           64px;
-    color:               #008C9E;
+    color:               #00DFFC;
 }
 header a {
-    color:               #008C9E;
+    color:               #00DFFC;
     text-decoration:     none;
 }
 header a:hover {
-    color:               #008C9E;
+    color:               #00DFFC;
     text-decoration:     none;
 }
 

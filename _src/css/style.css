@@ -141,11 +141,27 @@ h1 {
 .deeper {
     color:               #008C9E;
 }
+.deeper a {
+    color:               #008C9E;
+    text-decoration:     none;
+}
+.deeper a:hover {
+    color:               #008C9E;
+    text-decoration:     none;
+}
 
 .shedressedme {
     color:               #00B4CC;
 }
+.shedressedme a {
+    color:               #00B4CC;
+    text-decoration:     none;
+}
 
 .aquaburst {
     color:               #00DFFC;
+}
+.aquaburst a {
+    color:               #00DFFC;
+    text-decoration:    none;
 }

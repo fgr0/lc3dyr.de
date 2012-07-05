@@ -1,0 +1,151 @@
+/*
+ * Stylesheet for lc3dyr
+ * 
+ * Author: laerador
+ * Email:  laerador@lc3dyr.de
+ * 
+ */
+
+/* General Site Settings */
+body {
+    background-color:#343838;
+}
+
+/* Layout */
+/* div#nav { */
+/*     position:            absolute; */
+/*     top:                 0px; */
+/*     left:                0px; */
+/*     right:               0px; */
+/*     height:              40px; */
+
+/*     background-color:    black; */
+/* } */
+
+section {
+    position:            absolute;
+    top:                 75px;
+    left:                575px;
+    right:               200px;
+    min-width:           350px;
+
+    font-family:         Courier;
+    text-align:          justify;
+    font-size:           12pt;
+    line-height:         16pt;
+    color:               silver;
+}
+
+aside {
+}
+
+aside div#logo {
+    z-index:             0;
+    position:            absolute;
+    width:               250px;
+    top:                 125px;
+    left:                150px;
+    text-align:          center;
+    font-size:           128pt;
+    color:               #343838;
+    text-shadow:         0 -1px 1px black, 0 1px 1px gray;
+}
+aside div#logo:hover {
+    color:               #005F6B;
+}
+
+aside div#grass {
+    position:            absolute;
+    background-image:    url('../pic/grass_rising.png');
+    width:               250px;
+    height:              495px;
+    left:                150px;
+    bottom:              0px;
+}
+
+nav {
+    bottom:              0px;
+    left:                300px;
+    height:              50px;
+    
+    margin-bottom:       50px;
+
+
+    font-family:         Courier;
+    font-size:           24px;
+}
+
+nav.center {
+
+    width:200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-size: 72px;
+}
+
+nav ul {
+}
+
+nav ul li {
+    /* display:             inline; */
+    color:               #008C9E;
+    padding-right:       15px;
+    word-spacing:        -0.3em;
+}
+
+nav.center ul li {
+    /* display:             inline; */
+    list-style-type:     none;
+    padding-right:       15px;
+    padding-bottom:      75px;
+    margin-left:        -35px;
+    word-spacing:        -0.3em;
+}
+
+nav ul li:hover {
+    list-style-type:     disc;
+}
+
+footer {
+    position:            absolute;
+    bottom:              0px;
+    left:                0px;
+    right:               0px;
+    height:              1px;
+    width:               100%;
+    background-color:    black;
+
+    -webkit-box-shadow:  0px 0px 55px 10px rgba(0, 0, 0, 1);
+
+    box-shadow:          0px 0px 55px 10px rgba(0, 0, 0, 1);
+    background:          -webkit-linear-gradient
+    background:          -o-linear-gradient
+    background:          -ms-linear-gradient
+    background:          linear-gradient
+    filter:progid:DXImageTransform.Microsoft.gradient
+}
+
+/* Tag Styles */
+h1 {
+    font-weight:         normal;
+    color:               #00B4CC;
+    font-size:           34pt;
+    text-transform:      uppercase;
+    font-family:         'Courier';
+    letter-spacing:      -2px;
+    line-height:         90%;
+}
+
+
+/* Classes */ 
+.deeper {
+    color:               #008C9E;
+}
+
+.shedressedme {
+    color:               #00B4CC;
+}
+
+.aquaburst {
+    color:               #00DFFC;
+}

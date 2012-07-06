@@ -12,114 +12,109 @@ body {
 }
 
 /* Layout */
-section {
-    position:                absolute;
-    top:                     75px;
-    right:                   0px;
-    width:                   70%;
-    min-width:               450px;
-    margin-left: 350px;
-    border:1px solid black;
+#wrapper {
+    position:   absolute;
+    top:        0px;
+    left:       0px;
+    right:      0px;
+    bottom:     0px;
+    width:      100%;
+    min-width:  800px;
+    height:     100%;
+}
 
-    padding-left:             50px;
-    padding-right:            150px;
-    font-family:             Courier;
-    text-align:              justify;
-    font-size:               12pt;
-    line-height:             16pt;
-    color:                   silver;
+section {
+    position:     absolute;
+    top:          75px;
+    bottom:       0px;
+    left:         35%;
+    width:        55%;
+    min-width:    550px;
+
+    font-family:  Courier;
+    text-align:   justify;
+    font-size:    12pt;
+    line-height:  16pt;
+    color:        silver;
 }
 
 header {
-    font-size:               64px;
-    color:                   #00DFFC;
+    font-size:        64px;
+    color:            #00DFFC;
 }
 header a {
-    color:                   #00DFFC;
-    text-decoration:         none;
+    color:            #00DFFC;
+    text-decoration:  none;
 }
-header a:                    hover {
-    color:                   #00DFFC;
-    text-decoration:         none;
+header a:hover {
+    color:            #00DFFC;
+    text-decoration:  none;
 }
 
 aside {
 }
-
 aside div#logo {
-    z-index:                 0;
-    position:                absolute;
-    width:                   30%;
-    min-width:               350px;
-    top:                     125px;
-    left:                    0px;
-    text-align:              center;
-    font-size:               128pt;
-    color:                   #343838;
-    text-shadow:             0 -2px 1px black, 0 2px 1px gray;
-}
-aside div#logo:hover {
-    color:                   #005F6B;
-}
+    z-index:              0;
+    position:             relative;
+    top:                  125px;
+    left:                 0px;
+    width:                35%;
 
+    text-align:           center;
+    font-size:            128pt;
+    color:                #343838;
+    text-shadow:          0 -2px 1px black, 0 2px 1px gray;
+}
+aside div#logo:           hover {
+    color:                #005F6B;
+}
 aside div#grass {
-    z-index:                 2;
-    position:                absolute;
-    background-image:        url('../pic/grass_rising.png');
-    background-repeat:       no-repeat;
-    background-position:     center bottom;	
+    z-index:              2;
 
-    width:                   30%;
-    min-width:               350px;
-    height:                  495px;
-    left:                    0px;
-    bottom:                  0px;
+    position:             absolute;
+    bottom:               0px;
+    height:               495px;
+    width:                35%;
+
+    background-image:     url('../pic/grass_rising.png');
+    background-repeat:    no-repeat;
+    background-position:  center bottom;
+
 }
 
 nav {
-    bottom:                  0px;
-    left:                    300px;
-    height:                  50px;
-
-    margin-bottom:           50px;
-
-
-    font-family:             Courier;
-    font-size:               24px;
+    font-family:    Courier;
+    font-size:      24px;
 }
-
-nav.center {
-
-    width:                   200px;
-    margin:                  0 auto;
-    margin-top:              100px;
-    font-size:               72px;
-}
-
 nav ul {
 }
-
 nav ul li {
     /* display:              inline; */
     color:                   #008C9E;
-    padding-right:           15px;
     word-spacing:            -0.3em;
+    line-height:             0pt;
+    padding-bottom:          60pt;
+}
+nav.center {
+    width:       200px;
+    margin:      0 auto;
+    margin-top:  50px;
+    height:      300px;
+    font-size:   72px;
 }
 
 nav.center ul li {
     /* display:              inline; */
     list-style-type:         none;
-    padding-right:           15px;
-    padding-bottom:          75px;
     margin-left:             -35px;
     word-spacing:            -0.3em;
 }
-
 nav ul li:hover {
     list-style-type:         disc;
 }
 
 footer {
+    z-index:3;
     position:                absolute;
     bottom:                  0px;
     left:                    0px;
@@ -177,4 +172,32 @@ h1 {
 .aquaburst a {
     color:                   #00DFFC;
     text-decoration:         none;
+}
+
+blockquote.xkcd-quote {
+    width:           100%;
+    margin-top:      100px;
+    padding-left:    35px;
+
+    font-style:      italic;
+    text-align:      left;
+    text-transform:  uppercase;
+}
+div.xkcd-quote {
+    width:           500px;
+    margin:          0 auto;
+}
+.xkcd-quote p {
+    margin:          0px;
+    padding-bottom:  -5px;
+    padding-top:     0px;
+    padding-left:    40px;
+}
+.xkcd-quote a {
+    text-decoration: none;
+    color:           silver;
+}
+.xkcd-quote span {
+    font-size:       30pt;
+    font-family:     Chunk;
 }

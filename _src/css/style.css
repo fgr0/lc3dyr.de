@@ -27,6 +27,7 @@ section {
     top:                 75px;
     left:                575px;
     right:               200px;
+    min-width:           450px;
     min-width:           350px;
 
     font-family:         Courier;
@@ -55,7 +56,7 @@ aside {
 aside div#logo {
     z-index:             0;
     position:            absolute;
-    width:               250px;
+    width:               20%;
     top:                 125px;
     left:                150px;
     text-align:          center;

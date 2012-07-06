@@ -18,9 +18,10 @@ section {
     right:                   0px;
     width:                   70%;
     min-width:               450px;
+    margin-left: 350px;
 
-    margin-left:             50px;
-    margin-right:            150px;
+    padding-left:             50px;
+    padding-right:            150px;
     font-family:             Courier;
     text-align:              justify;
     font-size:               12pt;

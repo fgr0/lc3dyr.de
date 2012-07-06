@@ -1,0 +1,15 @@
+---
+layout: post
+category: Hello
+author: laerador
+tags: [Hello World, First Post]
+title: Yet another Hello World.
+---
+
+Da habe ich es doch endlich geschafft, einen Funktionstüchtigen Blog zu erstellen. Man kann jetzt nur noch hoffen, dass nun auch regelmäßig Beiträge erscheinen werden. 2 weitere, technisch orientierte Beiträge sind schon in Bearbeitung, aber vorher muss hier noch so einiges getan werden.
+
+Es fehlt nämlich noch ziemlich viel. Es gibt noch keine Navigation, die beiden Seiten über mich sind noch nicht gefüllt und hier und da fehlen noch ein paar Kleinigkeiten, wie z.B. ein Kommentarsystem. Aber ich wollte zumindest schon mal einen Sinnvollen Beitrag haben, wenn die Seite schon online ist. 
+
+Wär super, wenn ihr mir noch Ideen, Wünsche, Wunder, etc. zukommen lassen würdet - am besten via [Twitter][] so lange es noch keine Kommentare gibt.
+
+[Twitter]: http;//twitter.com/laerador

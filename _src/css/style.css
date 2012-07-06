@@ -74,11 +74,11 @@ aside div#logo:hover {
 }
 
 aside div#grass {
+    z-index:             2;
     position:            absolute;
     background-image:    url('../pic/grass_rising.png');
     width:               250px;
     height:              495px;
-    left:                150px;
     bottom:              0px;
 }
 

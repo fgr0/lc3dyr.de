@@ -57,8 +57,9 @@ aside div#logo {
     z-index:                 0;
     position:                absolute;
     width:                   20%;
+    min-width:               550px;
     top:                     125px;
-    left:                    150px;
+    left:                    0px;
     text-align:              center;
     font-size:               128pt;
     color:                   #343838;

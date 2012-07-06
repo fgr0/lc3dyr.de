@@ -19,6 +19,7 @@ section {
     width:                   70%;
     min-width:               450px;
     margin-left: 350px;
+    border:1px solid black;
 
     padding-left:             50px;
     padding-right:            150px;

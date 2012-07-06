@@ -19,8 +19,7 @@ title: Blog
                 {{ content }}
 
                 <div class="infobotpost">
-                    <hr class="style-two"/>
-                    {% if post.categories != empty %}Categories: {{ post.categories | array_to_sentence_string}}&nbsp;|&nbsp;{% endif %}{% if post.tags != empty %}Tags: {{ post.tags | array_to_sentence_string }}&nbsp;|&nbsp;{% endif %}Words: {{ content | number_of_words }}
+                    &nbsp;
                 </div>
             </article>
     {% endfor %}

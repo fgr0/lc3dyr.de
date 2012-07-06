@@ -51,12 +51,17 @@ header a:hover {
 }
 
 aside {
+    position:            absolute;
+    top:                 0px;
+    left:                0px:
+    bottom:              0px;
+    width:               20%;
+
 }
 
 aside div#logo {
     z-index:             0;
     position:            absolute;
-    width:               20%;
     top:                 125px;
     left:                150px;
     text-align:          center;

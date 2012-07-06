@@ -1,4 +1,23 @@
 ---
 layout: wire
 ---
-    {{ content }}
+          <article>
+                <header><a href="{{ site.domain }}{{ page.url }}">{{ page.title }}</a></header>
+                <div class="infotoppost">
+                    {{ page.date | date_to_long_string }}
+                    {% if post.author %}
+                        by {{ page.author }}
+                    {% endif %}
+                    {% if page.categories != empty %}
+                        in {{ page.categories | array_to_sentence_string }}
+                    {% endif %}
+                </div>
+
+                {{ content }}
+
+                <div class="infobotpost">
+                    <hr class="style-two"/>
+                    {% if page.categories != empty %}Categories: {{ page.categories | array_to_sentence_string}}&nbsp;|&nbsp;{% endif %}{% if page.tags != empty %}Tags: {{ page.tags | array_to_sentence_string }}&nbsp;|&nbsp;{% endif %}Words: {{ content | number_of_words }}
+                </div>
+            </article>
+

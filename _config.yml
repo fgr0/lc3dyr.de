@@ -3,7 +3,7 @@ destination:   _site
 pygments:      true
 
 markdown:      maruku
-permalink:     pretty
+permalink:     /blog/:year/:month/:day/:title/
 
 maruku:
   use_tex:     false

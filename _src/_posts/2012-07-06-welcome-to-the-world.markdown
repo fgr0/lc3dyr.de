@@ -1,0 +1,39 @@
+---
+layout: post
+category: Hello World
+title: Welcome to the new World
+---
+
+# Level 1 Header
+Some Text
+
+## Level 2 Header
+Some more Text
+
+### Level 3 Header
+This page offers a brief overview of what it’s like to use Markdown. The syntax page provides complete, detailed documentation for every feature, but Markdown should be very easy to pick up simply by looking at a few examples of it in action. The examples on this page are written in a before/after style, showing example syntax and the HTML output produced by Markdown.
+
+> Quote! he said.
+> Then vanished away.
+
+Some of these words *are emphasized*.
+Some of these words _are emphasized also_.
+
+Use two asterisks for **strong emphasis**.
+Or, if you prefer, __use two underscores instead__.
+
+Now lets test a list:
+-   Candy.
+-   Gum.
+-   Booze.
+
+This is an [example link](http://example.com/).
+
+I strongly recommend against using any `<blink>` tags.
+
+If you want your page to validate under XHTML 1.0 Strict,
+you've got to put paragraph tags in your blockquotes:
+
+    <blockquote>
+            <p>For example.</p>
+    </blockquote>

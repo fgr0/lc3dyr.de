@@ -24,23 +24,29 @@ body {
 }
 
 section {
-    position:     absolute;
-    top:          75px;
-    bottom:       0;
-    left:         35%;
-    width:        55%;
-    min-width:    550px;
+    position:       absolute;
+    top:            75px;
+    left:           35%;
+    width:          55%;
+    min-width:      550px;
 
-    font-family:  Courier;
-    text-align:   justify;
-    font-size:    12pt;
-    line-height:  16pt;
-    color:        silver;
+    padding-bottom:  50px;
+
+    font-family:    Courier;
+    text-align:     justify;
+    font-size:      12pt;
+    line-height:    16pt;
+    color:          silver;
 }
 
 header {
-    font-size:        64px;
+    font-size:        58px;
+    line-height:      0.8em;
     color:            #00DFFC;
+    text-align:       left;
+    word-spacing:     -0.3em;
+    letter-spacing:   -3px;
+    margin-bottom:    10px;
 }
 header a {
     color:            #00DFFC;
@@ -67,13 +73,13 @@ aside #logo {
     color:                #343838;
     text-shadow:          0 -2px 1px black, 0 2px 1px gray;
 }
-aside #logo:hover {
-    color:                #005F6B;
-}
+/* aside #logo:hover { */
+/*     color:                #005F6B; */
+/* } */
 aside #grass {
     z-index:              2;
 
-    position:             absolute;
+    position:             fixed;
     bottom:               0;
     height:               495px;
     width:                35%;
@@ -118,7 +124,7 @@ nav ul li:hover {
 
 footer {
     z-index:3;
-    position:                absolute;
+    position:                fixed;
     bottom:                  0;
     left:                    0;
     right:                   0;
@@ -135,15 +141,45 @@ footer {
 h1 {
     font-weight:             normal;
     color:                   #00B4CC;
-    font-size:               34pt;
-    text-transform:          uppercase;
+    font-size:               26pt;
     font-family:             'Courier';
-    letter-spacing:          -2px;
-    line-height:             90%;
+    margin-bottom:           0.5em;
+    margin-top:              1em;
+}
+h2 {
+    font-weight:             normal;
+    color:                   #008C9E;
+    font-size:               22pt;
+    font-family:             'Courier';
+    margin-bottom:           0.2em;
+    margin-top:              1em;
+}
+h3 {
+    font-weight:             normal;
+    color:                   #008C9E;
+    font-size:               16pt;
+    font-family:             'Courier';
+    margin-top:              1em;
+    margin-bottom:           0;
+}
+p {
+    text-indent:             1em;
+    margin-bottom:           0.5em;
+    margin-top:              0.5em;
+}
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
 }
 
-
 /* Classes */
+.liohu4 {
+    color:                   #005F68;
+}
 .deeper {
     color:                   #008C9E;
 }
@@ -198,4 +234,16 @@ div.xkcd-quote {
 .xkcd-quote span {
     font-size:       30pt;
     font-family:     Chunk;
+}
+
+.infotoppost {
+    color: gray;
+    font-size: 10pt;
+    padding-bottom:0.5em;
+}
+
+.infobotpost {
+    color: gray;
+    font-size: 10pt;
+    padding-top:0.5em;
 }

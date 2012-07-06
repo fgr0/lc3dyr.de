@@ -12,24 +12,15 @@ body {
 }
 
 /* Layout */
-/* div#nav { */
-/*     position:             absolute; */
-/*     top:                  0px; */
-/*     left:                 0px; */
-/*     right:                0px; */
-/*     height:               40px; */
-
-/*     background-color:     black; */
-/* } */
-
 section {
     position:                absolute;
     top:                     75px;
-    left:                    575px;
-    right:                   200px;
+    right:                   0px;
+    width:                   70%;
     min-width:               450px;
-    min-width:               350px;
 
+    margin-left:             50px;
+    margin-right:            150px;
     font-family:             Courier;
     text-align:              justify;
     font-size:               12pt;
@@ -63,9 +54,9 @@ aside div#logo {
     text-align:              center;
     font-size:               128pt;
     color:                   #343838;
-    text-shadow:             0 -1px 1px black, 0 1px 1px gray;
+    text-shadow:             0 -2px 1px black, 0 2px 1px gray;
 }
-aside div#logo:              hover {
+aside div#logo:hover {
     color:                   #005F6B;
 }
 
@@ -122,7 +113,7 @@ nav.center ul li {
     word-spacing:            -0.3em;
 }
 
-nav ul li:                   hover {
+nav ul li:hover {
     list-style-type:         disc;
 }
 
@@ -142,7 +133,7 @@ footer {
     background:              -o-linear-gradient
     background:              -ms-linear-gradient
     background:              linear-gradient
-    filter:                  progid:                              DXImageTransform.Microsoft.gradient
+    filter:progid:DXImageTransform.Microsoft.gradient
 }
 
 /* Tag Styles */

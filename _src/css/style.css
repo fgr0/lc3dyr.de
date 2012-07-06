@@ -73,6 +73,7 @@ aside div#grass {
     position:                absolute;
     background-image:        url('../pic/grass_rising.png');
     background-repeat:       no-repeat;
+    background-position:     center bottom;	
 
     width:                   20%;
     min-width:               250px;

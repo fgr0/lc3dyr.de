@@ -56,8 +56,8 @@ aside {
 aside div#logo {
     z-index:                 0;
     position:                absolute;
-    width:                   20%;
-    min-width:               400px;
+    width:                   30%;
+    min-width:               350px;
     top:                     125px;
     left:                    0px;
     text-align:              center;
@@ -77,7 +77,7 @@ aside div#grass {
     background-position:     center bottom;	
 
     width:                   30%;
-    min-width:               400px;
+    min-width:               350px;
     height:                  495px;
     left:                    0px;
     bottom:                  0px;

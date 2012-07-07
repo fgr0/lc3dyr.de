@@ -13,5 +13,8 @@ maruku:
   png_url:     /images/latex
 
 # custom Variables
-title: Lawn of laerador
+name: Lawn of laerador
+description: "(:"
 domain: "http://lc3dyr.de"
+url: http://lc3dyr.de/blog
+

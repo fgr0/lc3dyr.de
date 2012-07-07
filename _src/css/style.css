@@ -57,9 +57,9 @@ header a:hover {
     text-decoration:  none;
 }
 
-aside {
-    /* space */
-}
+/* aside { */
+/*     /1* space *1/ */
+/* } */
 aside #logo {
     z-index:              0;
     position:             relative;
@@ -90,36 +90,33 @@ aside #grass {
 
 }
 
-nav {
-    font-family:    Courier;
-    font-size:      24px;
-}
-nav ul {
-    /* space */
-}
-nav ul li {
-    /* display:              inline; */
-    color:                   #008C9E;
-    word-spacing:            -0.3em;
-    line-height:             0;
-    padding-bottom:          60pt;
-}
 nav.center {
-    width:       200px;
-    margin:      0 auto;
-    margin-top:  50px;
-    height:      300px;
-    font-size:   72px;
-}
+    width:             200px;
+    margin:            0 auto;
+    margin-top:        50px;
+    height:            300px;
 
-nav.center ul li {
-    /* display:              inline; */
-    list-style-type:         none;
-    margin-left:             -35px;
-    word-spacing:            -0.3em;
+    font-size:         72px;
+    font-family:       Courier;
 }
-nav ul li:hover {
-    list-style-type:         disc;
+nav.center ul {
+    list-style:        none;
+    padding:           0;
+    margin:            0;
+}
+nav.center ul li {
+    /* display:        inline; */
+    list-style-type:   none;
+    list-style-image:  url(../pic/bullet_transparent.png);
+    height:            82px;
+
+    color:             #008C9E;
+    word-spacing:      -0.3em;
+    line-height:       0;
+}
+nav.center ul li:hover {
+    list-style-type:   disc;
+    list-style-image:  url(../pic/bullet.png);
 }
 
 footer {
@@ -211,7 +208,6 @@ hr.style-two {
 blockquote.xkcd-quote {
     width:           100%;
     margin-top:      100px;
-    padding-left:    35px;
 
     font-style:      italic;
     text-align:      left;

@@ -38,7 +38,8 @@ body {
 .infotoppost {
     color: gray;
     font-size: 10pt;
-    margin-bottom:0.5em;
+    margin-top: -25px;
+    margin-bottom: 25px;
 }
 
 .infobotpost {
@@ -62,7 +63,7 @@ header {
     text-align:       left;
     word-spacing:     -0.3em;
     letter-spacing:   -3px;
-    margin-bottom:    20px;
+    margin-bottom:    30px;
 }
 header a {
     color:            #00DFFC;

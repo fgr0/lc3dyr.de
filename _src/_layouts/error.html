@@ -2,9 +2,11 @@
 layout: wire
 ---
             <article>
-            <header>{% case page.errorcode %}
-            {% when 403 %} 403
-            {% when 404 %} 404 | Page not found
-            {% endcase %}</header>
+            {% case page.errorcode %}
+            {% when 403 %} <header>403 | Forbidden</header>
+                Looks like you are not supposed to be here. I am watching you! (If against all odds, you think that you should be supposed to be here, contact me via <a href="http://twitter.com/laerador">Twitter</a> or <a href="mailto:laerador@lc3dyr.de">Email</a>)
+            {% when 404 %} <header>404 | Page not found</header>
+                It looks like whatever you have been looking for, is gone. But if you are dead certain that something should be here, contact me via <a href="http://twitter.com/laerador">Twitter</a> or <a href="mailto:laerador@lc3dyr.de">Email</a>.
+            {% endcase %}
                     {{ content }}
             </article>

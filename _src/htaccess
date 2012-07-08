@@ -3,3 +3,4 @@ layout: none
 permalink: .htaccess
 ---
 ErrorDocument 404 /woops/404/
+ErrorDocument 403 /woops/403/

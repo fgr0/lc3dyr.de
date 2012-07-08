@@ -1,0 +1,149 @@
+/*
+ * Stylesheet for lc3dyr.de
+ * 
+ * Author: laerador
+ * Email:  laerador@lc3dyr.de
+ * 
+ */
+
+/* Font & Text */
+body {
+    background-color: #343636;
+
+    font-family: Courier, monospace;
+    font-size: 12pt;
+    color: silver;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+}
+
+.logo {
+    text-align: center;
+    font-size: 128pt;
+    font-family: Verdana, Tahoma, sans-serif;
+    color: #343636;
+    text-shadow: 0 -1px 1px black, 0 1px 2px gray;
+}
+.xkcd {
+    font-style: italic;
+    text-align: left;
+    text-transform: uppercase;
+}
+.xkcd a {
+    text-decoration: none;
+    color: silver;
+}
+
+.infotoppost {
+    color: gray;
+    font-size: 10pt;
+    margin-bottom:0.5em;
+}
+
+.infobotpost {
+    color: gray;
+    font-size: 10pt;
+    padding-top:0.5em;
+    padding-bottom:50px;
+}
+
+.front {
+    font-size:62pt;
+}
+.ntop {
+    font-size:24pt;
+}
+
+header {
+    font-size:        58px;
+    line-height:      0.8em;
+    color:            #00DFFC;
+    text-align:       left;
+    word-spacing:     -0.3em;
+    letter-spacing:   -3px;
+    margin-bottom:    20px;
+}
+header a {
+    color:            #00DFFC;
+    text-decoration:  none;
+}
+header a:hover {
+    color:            #00DFFC;
+    text-decoration:  none;
+}
+
+/* Heading Style */
+h1 {
+    font-weight:             normal;
+    color:                   #00B4CC;
+    font-size:               26pt;
+    font-family:             'Courier';
+    margin-bottom:           0.5em;
+    margin-top:              1em;
+}
+h2 {
+    font-weight:             normal;
+    color:                   #008C9E;
+    font-size:               22pt;
+    font-family:             'Courier';
+    margin-bottom:           0.2em;
+    margin-top:              1em;
+}
+h3 {
+    font-weight:             normal;
+    color:                   #008C9E;
+    font-size:               16pt;
+    font-family:             'Courier';
+    margin-top:              1em;
+    margin-bottom:           0;
+}
+
+/* Paragraph Style */
+p {
+    text-indent:             1em;
+    margin-bottom:           0.5em;
+    margin-top:              0.5em;
+}
+
+/* HR-Line Style */
+.style-two {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+}
+
+/* Color */
+.liohu4 {
+    color:                   #005F68;
+}
+.deeper {
+    color:                   #008C9E;
+}
+.deeper a {
+    color:                   #008C9E;
+    text-decoration:         none;
+}
+.deeper a:                   hover {
+    color:                   #008C9E;
+    text-decoration:         none;
+}
+
+.shedressedme {
+    color:                   #00B4CC;
+}
+.shedressedme a {
+    color:                   #00B4CC;
+    text-decoration:         none;
+}
+
+.aquaburst {
+    color:                   #00DFFC;
+}
+.aquaburst a {
+    color:                   #00DFFC;
+    text-decoration:         none;
+}

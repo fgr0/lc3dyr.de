@@ -1,0 +1,125 @@
+/*
+ * Stylesheet for lc3dyr.de
+ * 
+ * Author: laerador
+ * Email:  laerador@lc3dyr.de
+ * 
+ */
+
+/* Positioning */
+.wrapper {
+    position:   absolute;
+    top:        0;
+    left:       0;
+    right:      0;
+    bottom:     0;
+    height:     100%;
+    width:      100%;
+    min-width:  800px;
+}
+
+.bottom .fixed {
+    position: fixed;
+    bottom: 0;
+}
+
+.grass {
+    z-index: -1;
+
+    position: fixed;
+    bottom: 0;
+    height: 495px;
+    width: 35%;
+    min-width: 250px;
+    
+    background-image: url(../pic/grass_rising.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+section {
+    position:       absolute;
+    top:            75px;
+    left:           35%;
+    width:          55%;
+    min-width:      550px;
+
+    padding-bottom:  50px;
+
+    font-family:    Courier;
+    text-align:     justify;
+    font-size:      12pt;
+    line-height:    16pt;
+    color:          silver;
+}
+
+aside .atop {
+    z-index: 0;
+    position: relative;
+    top: 100px;
+    left: 0;
+    width: 35%;
+}
+
+aside .atop .logo {
+    margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+    position:relative;
+    z-index: 1000;
+    font-family: "Courier";
+    text-align: left;
+    text-shadow: none;
+    width: 250px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    list-style-type: none;
+
+    color: #008C9E;
+    word-spacing: -0.3em;
+}
+
+nav.front ul li {
+    list-style-type: none;
+    line-height: 80px;
+    margin-bottom:20px;
+}
+nav.front ul li:hover {
+    list-style-type: disc;
+    list-style-image: url('../pic/bullet.png');
+    margin-bottom:20px;
+}
+
+/* Footer */
+footer {
+    z-index:3;
+    position:                fixed;
+    bottom:                  0;
+    left:                    0;
+    right:                   0;
+    height:                  1px;
+    width:                   100%;
+    background-color:        black;
+
+    -webkit-box-shadow:      0 0 55px 10px rgba(0, 0, 0, 1);
+    -moz-box-shadow:         0 0 55px 10px rgba(0, 0, 0, 1);
+    box-shadow:              0 0 55px 10px rgba(0, 0, 0, 1);
+}
+
+/* Frontpage Quote */
+blockquote.xkcd {
+    width: 100%;
+}
+div.xkcd {
+    width: 450px;
+    margin: 0 auto;
+    padding-left: 50px;
+}

@@ -1,0 +1,10 @@
+---
+layout: wire
+---
+            <article>
+            <header>{% case page.errorcode %}
+            {% when 403 %} 403
+            {% when 404 %} 404 | Page not found
+            {% endcase %}</header>
+                    {{ content }}
+            </article>

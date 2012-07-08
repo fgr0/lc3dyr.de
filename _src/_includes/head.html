@@ -1,6 +1,8 @@
     <head>
         <meta charset="utf-8">
-        {% comment %} <meta http-equiv="refresh" content="5"> {% endcomment %}
+        {% if site.refresh > 0%}
+        <meta http-equiv="refresh" content="{{ site.refresh }}">
+        {% endif %}
         <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
 
         <link href="/css/font.css" type="text/css" rel="stylesheet" /> 

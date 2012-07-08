@@ -1,7 +1,15 @@
         <aside>
+            {% if page.nav == false %}
             <div id="logo">
                 &#622;
             </div>
+            {% else %}
+            <div id="logo">
+                <nav class="aside">
+                    {% include nav.html %}
+                </nav>
+            </div>
+            {% endif %}
 
             <div id="grass">
             </div>

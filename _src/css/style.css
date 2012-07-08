@@ -57,9 +57,6 @@ header a:hover {
     text-decoration:  none;
 }
 
-/* aside { */
-/*     /1* space *1/ */
-/* } */
 aside #logo {
     z-index:              0;
     position:             relative;
@@ -73,9 +70,6 @@ aside #logo {
     color:                #343838;
     text-shadow:          0 -2px 1px black, 0 2px 1px gray;
 }
-/* aside #logo:hover { */
-/*     color:                #005F6B; */
-/* } */
 aside #grass {
     z-index:              2;
 
@@ -90,19 +84,36 @@ aside #grass {
 
 }
 
+nav {
+    font-family:       Courier;
+    width: 200px;
+    margin: 0 auto;
+}
+nav ul {
+    list-style:        none;
+    padding:           0;
+    margin:            0;
+}
+nav.aside {
+    z-index: 9!important;
+    text-align:left;
+    font-size: 24pt;
+    text-shadow: none;
+}
 nav.center {
     width:             200px;
     margin:            0 auto;
     margin-top:        50px;
     height:            300px;
 
-    font-size:         72px;
-    font-family:       Courier;
+    text-align:left;
+    font-size: 72pt;
 }
-nav.center ul {
-    list-style:        none;
-    padding:           0;
-    margin:            0;
+nav.aside ul li {
+    height:50px;
+}
+nav.center {
+    height:82px;
 }
 nav.center ul li {
     /* display:        inline; */
@@ -117,6 +128,17 @@ nav.center ul li {
 nav.center ul li:hover {
     list-style-type:   disc;
     list-style-image:  url(../pic/bullet.png);
+}
+nav.aside ul li {
+    /* display:        inline; */
+    list-style-type:   none;
+
+    color:             #008C9E;
+    word-spacing:      -0.3em;
+    border:1px solid black;
+}
+nav.aside ul li:hover {
+    list-style-type:   disc;
 }
 
 footer {

@@ -4,8 +4,10 @@ layout: wire
             <article>
             {% case page.errorcode %}
             {% when 403 %} <header>403 | Forbidden</header>
+                <div id="infotoppost"></div>
                 <p>Looks like you are not supposed to be here. I am watching you! (If against all odds, you think that you should be supposed to be here, contact me via <a href="http://twitter.com/laerador">Twitter</a> or <a href="mailto:laerador@lc3dyr.de">Email</a>)</p>
             {% when 404 %} <header>404 | Page not found</header>
+                <div id="infotoppost"></div>
                 <p>It looks like whatever you have been looking for, is gone. But if you are dead certain that something should be here, contact me via <a href="http://twitter.com/laerador">Twitter</a> or <a href="mailto:laerador@lc3dyr.de">Email</a>.</p>
             {% endcase %}
                     {{ content }}

@@ -12,7 +12,8 @@ maruku:
   png_dir:     images/latex
   png_url:     /images/latex
 
-include: ["_site/.htaccess",".htaccess"]
+include: .htaccess
+
 # custom Variables
 name: Lawn of laerador
 description: "(:"

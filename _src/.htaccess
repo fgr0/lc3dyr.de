@@ -2,4 +2,4 @@
 layout: none
 permalink: .htaccess
 ---
-ErrorDocument 404 /woops/404/index.html
+ErrorDocument 404 /woops/404/

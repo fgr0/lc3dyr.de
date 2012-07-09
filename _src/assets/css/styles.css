@@ -128,7 +128,7 @@ p {
     color:                   #008C9E;
     text-decoration:         none;
 }
-.deeper a:                   hover {
+.deeper a:hover {
     color:                   #008C9E;
     text-decoration:         none;
 }
@@ -140,6 +140,10 @@ p {
     color:                   #00B4CC;
     text-decoration:         none;
 }
+.shedressedme a:hover {
+    color:                   #00B4CC;
+    text-decoration:         none;
+}
 
 .aquaburst {
     color:                   #00DFFC;
@@ -147,4 +151,18 @@ p {
 .aquaburst a {
     color:                   #00DFFC;
     text-decoration:         none;
+}
+.aquaburst a:hover {
+    color:                   #00DFFC;
+    text-decoration:         none;
+}
+
+/* link style */
+a {
+    color: #008C9E;
+    text-decoration: none;
+}
+a:hover {
+    color: #00B4CC;
+    text-decoration: none;
 }

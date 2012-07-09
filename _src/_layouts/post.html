@@ -5,7 +5,7 @@ layout: wire
                 <header><a href="{{ site.domain }}{{ page.url }}">{{ page.title }}</a></header>
                 <div class="infotoppost">
                     {{ page.date | date_to_long_string }}
-                    {% if post.author %}
+                    {% if page.author %}
                         by {{ page.author }}
                     {% endif %}
                     {% if page.categories != empty %}
@@ -16,7 +16,7 @@ layout: wire
                 {{ content }}
 
                 <div class="infobotpost">
-                    <hr class="style-two"/>
+                    {% comment %} <hr class="style-two"/> {% endcomment %}
                     {% if page.categories != empty %}Categories: {{ page.categories | array_to_sentence_string}}&nbsp;|&nbsp;{% endif %}{% if page.tags != empty %}Tags: {{ page.tags | array_to_sentence_string }}&nbsp;|&nbsp;{% endif %}Words: {{ content | number_of_words }}
                 </div>
             </article>

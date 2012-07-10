@@ -1,5 +1,6 @@
 source:        _src
 destination:   _site
+plugins:       _src/_plugins
 pygments:      true
 
 markdown:      maruku
@@ -11,6 +12,9 @@ maruku:
   png_engine:  blahtex
   png_dir:     images/latex
   png_url:     /images/latex
+
+# Plugins
+category_dir:  blog/categories/
 
 # custom Variables
 name: Lawn of laerador

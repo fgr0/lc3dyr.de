@@ -67,17 +67,20 @@ section {
     color:          silver;
 }
 
-aside .atop {
-    z-index: 0;
-    position: relative;
-    top: 100px;
+aside {
+    z-index: 2;
+    position: absolute;
+    top: 75px;
     left: 0;
     width: 35%;
 }
 
-aside .atop .logo {
+aside .atop {
+    z-index: 3;
     margin: 0 auto;
+    width: 250px;
 }
+
 aside .atop .ntop {
     margin: 0 auto;
     width: 250px;

@@ -11,6 +11,17 @@
                 <nav class="ntop">
                     {% include nav.html %}
                 </nav>
+
+                <div class="categories">
+                Categories:
+                <ul>
+                    {% if page.blog == true %}
+                        {% for category in site.categories %}
+                            <li><a href="/{{ site.category_dir }}/{{ category | first}}">{{ category | first }}</a></li>
+                        {% endfor %}
+                    {% endif %}
+                </ul>
+                </div>
             </div>
 
             <div class="grasssmall">

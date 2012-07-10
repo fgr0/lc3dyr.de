@@ -23,16 +23,30 @@
     bottom: 0;
 }
 
-.grass {
-    z-index: -1;
+.grassbig {
+    z-index: 1;
 
     position: fixed;
     bottom: 0;
     height: 495px;
     width: 35%;
     min-width: 250px;
-    
+
     background-image: url(../pic/grass_rising.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.grasssmall {
+    z-index: 1;
+
+    position: fixed;
+    bottom: 0;
+    height: 495px;
+    width: 35%;
+    min-width: 250px;
+
+    background-image: url(../pic/grass_low.png);
     background-repeat: no-repeat;
     background-position: center bottom;
 }
@@ -64,6 +78,10 @@ aside .atop {
 aside .atop .logo {
     margin: 0 auto;
 }
+aside .atop .ntop {
+    margin: 0 auto;
+    width: 250px;
+}
 
 /* Navigation */
 nav {
@@ -78,6 +96,8 @@ nav {
 
 nav ul {
     list-style: none;
+    margin-top: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -85,6 +105,10 @@ nav ul li {
 
     color: #008C9E;
     word-spacing: -0.3em;
+}
+
+nav ul li:hover {
+    list-style-type: disc;
 }
 
 nav.front ul li {

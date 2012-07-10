@@ -1,16 +1,19 @@
         <aside>
-            <div class="grass center">
-            </div>
-
-            {% if page.nav == false %}
+        {% if page.nav == false %}
             <div class="atop logo">
                 &#622;
             </div>
-            {% else %}
+
+            <div class="grassbig">
+            </div>
+        {% else %}
             <div class="atop">
                 <nav class="ntop">
                     {% include nav.html %}
                 </nav>
             </div>
-            {% endif %}
+
+            <div class="grasssmall">
+            </div>
+        {% endif %}
         </aside>

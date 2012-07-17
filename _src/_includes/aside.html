@@ -12,16 +12,16 @@
                     {% include nav.html %}
                 </nav>
 
-                <div class="categories">
-                Categories:
-                <ul>
-                    {% if page.blog == true %}
+                {% if page.blog == true %}
+                    <div class="categories">
+                    Categories:
+                    <ul>
                         {% for category in site.categories %}
                             <li><a href="/{{ site.category_dir }}/{{ category | first}}">{{ category | first }}</a></li>
                         {% endfor %}
-                    {% endif %}
-                </ul>
-                </div>
+                    </ul>
+                    </div>
+                {% endif %}
             </div>
 
             <div class="grasssmall">

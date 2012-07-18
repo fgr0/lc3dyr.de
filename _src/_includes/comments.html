@@ -1,0 +1,44 @@
+                <div id="comments">
+                    {% case page.comment_count %}
+                    {% when 0 %}
+                    {% when 1 %}
+                        <h3>1 Comment</h3>
+                    {% else %}
+                        <h3>{{page.comment_count}} Comments</h3>
+                    {% endcase %}
+                    {% for c in page.comments %}
+                        <br />
+                        <div class="comment {% cycle 'odd', 'even' %}">
+                            <p class="comment_header">
+                            From: <span class="deeper">{{c.name}}</span> | <span class="comment_date">{{ c.date }}</span>
+                            </p>
+                            <p>
+                            {{ c.comment | newline_to_br }}
+                            </p>
+                        </div>
+                    {% endfor %}
+                    <br />
+                    <h3>Post a comment</h3>
+                    <p style="font-style:italic;font-size:10pt;">All comments are held for moderation; basic HTML formatting accepted.</p>
+                    <form id="commentform" method="POST" action="{{site.url}}/commentsubmit.php">
+                        <input type="hidden" name="post_id" value="{{page.id}}" />
+                        <input type="hidden" name="return_url" value="{{site.url}}{{page.url}}" />
+                        <table>
+                            <tr>
+                                <th>Name:</th>
+                                <td><input type="text" size="25" name="name" /> (required)</td>
+                            </tr>
+                            <tr>
+                            <br />
+                                <th>E-mail:</th>
+                                <td><input type="text" size="25" name="email" /> (required, not published)</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><textarea name="comment" rows="10" cols="60" ></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><input type="submit" name="" value="Submit Comment" /></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>

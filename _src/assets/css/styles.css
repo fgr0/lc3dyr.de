@@ -166,3 +166,13 @@ a:hover {
     color: #00B4CC;
     text-decoration: none;
 }
+
+/* comment style */
+.comment {
+    font-size: 10pt;
+}
+.comment .comment_header {
+    text-indent: 0;
+    color: gray;
+    font-size: 12pt;
+}

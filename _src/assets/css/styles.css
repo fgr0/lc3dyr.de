@@ -176,3 +176,13 @@ a:hover {
     color: gray;
     font-size: 12pt;
 }
+input, textarea {
+    background-color: silver;
+    border: 1px solid gray;
+    padding:2px;
+} 
+label {
+    font-size:10pt;
+    color: gray;
+    padding-left: 15px;
+}

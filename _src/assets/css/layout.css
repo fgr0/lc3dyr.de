@@ -150,3 +150,11 @@ div.xkcd {
     margin: 0 auto;
     padding-left: 50px;
 }
+
+input[type=search] { 
+    color: #008C9E;  
+    display: block; 
+    width: 100%; 
+    word-spacing: 20px;               
+}
+

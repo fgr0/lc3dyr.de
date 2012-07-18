@@ -15,10 +15,11 @@ maruku:
 
 # Plugins
 category_dir:  blog/categories/
+project_dir:   lepro
 
 # custom Variables
 name: Lawn of laerador
 description: "(:"
 domain: "http://lc3dyr.de"
 url: http://lc3dyr.de/blog
-refresh: 0
+refresh: 9

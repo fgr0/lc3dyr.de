@@ -19,7 +19,7 @@
 // Format of the date you want to use in your comments.  See
 // http://php.net/manual/en/function.date.php for the insane details of this
 // format.
-$DATE_FORMAT = "Y-m-d H:i";
+$DATE_FORMAT = "j. M Y, H:i";
 
 // Where the comment e-mails should be sent to.  This will also be used as
 // the From: address.  Whilst you could, in theory, change this to take the

@@ -79,7 +79,7 @@ h1 {
     font-weight:             normal;
     color:                   #00B4CC;
     font-size:               26pt;
-    font-family:             'Courier';
+    font-family:             'Courier', monospace;
     margin-bottom:           0.5em;
     margin-top:              1em;
 }
@@ -87,7 +87,7 @@ h2 {
     font-weight:             normal;
     color:                   #008C9E;
     font-size:               22pt;
-    font-family:             'Courier';
+    font-family:             'Courier', monospace;
     margin-bottom:           0.2em;
     margin-top:              1em;
 }
@@ -95,7 +95,7 @@ h3 {
     font-weight:             normal;
     color:                   #008C9E;
     font-size:               16pt;
-    font-family:             'Courier';
+    font-family:             'Courier', monospace;
     margin-top:              1em;
     margin-bottom:           0;
 }

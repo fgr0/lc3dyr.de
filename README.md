@@ -48,14 +48,14 @@ licensed under MIT.
 Special thanks to the following Projects, from which I used Code/Ideas:
 - The _Colortheme_ of the website is hardly inspired by:
     [Dream Magnet by
-    lagunabeach][http://www.colourlovers.com/palette/482774/dream_magnet]
+    lagunabeach](http://www.colourlovers.com/palette/482774/dream_magnet)
     licenced [CC-BY-NC-SA][CC]
-- The _Flowerimages_ are created by [DragonArt][http://dragonartz.net] and
+- The _Flowerimages_ are created by [DragonArt](http://dragonartz.net) and
   released under [CC-BY-NC-SA][CC], and have been recolored by myself.
 - Jekyll Plugins from
-  [Recursive-Design][http://recursive-design.com/projects/jekyll-plugins/],
+  [Recursive-Design](http://recursive-design.com/projects/jekyll-plugins/),
   which I use. They are Licenced under the [MIT
-  License][https://github.com/recurser/jekyll-plugins/blob/master/LICENSE]. 
+  License](https://github.com/recurser/jekyll-plugins/blob/master/LICENSE). 
 
 
 [CC]: http://creativecommons.org/licenses/by-nc-sa/3.0/

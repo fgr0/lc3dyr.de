@@ -21,7 +21,7 @@ After that you should install two dependencies, Pygments, which is used for
 Syntax Highlighting, and Redcarpet, which is used as Markdown-Renderer.
 
 ```
-[sudo] gem install redcarpet
+[sudo] gem install redcarpet --version=1.9
 [sudo] easy_install pygments
 ```
 

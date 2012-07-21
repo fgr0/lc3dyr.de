@@ -1,21 +1,16 @@
 source:        _src
 destination:   _site
 plugins:       _src/_plugins
-pygments:      true
 
-markdown:      maruku
+markdown:      redcarpet
+
+pygments:      true
+future:        false
 permalink:     /blog/:year/:month/:day/:title/
 
-maruku:
-  use_tex:     false
-  use_divs:    false
-  png_engine:  blahtex
-  png_dir:     images/latex
-  png_url:     /images/latex
 
 # Plugins
 category_dir:  blog/categories/
-project_dir:   lepro
 
 # custom Variables
 name: Lawn of laerador

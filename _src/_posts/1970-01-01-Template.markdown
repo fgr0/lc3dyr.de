@@ -3,6 +3,7 @@ layout: post
 category: Hello World
 tags: [one, two, three]
 title: This is a template File
+link: http://google.com/
 published: false
 ---
 

@@ -2,23 +2,45 @@
 layout: wire
 blog: true
 ---
-          <article>
-                <header><a href="{{ site.domain }}{{ page.url }}">{{ page.title }}</a></header>
-                <div class="infotoppost">
-                    {{ page.date | date_to_long_string }}
-                    {% if page.author %}
-                        by {{ page.author }}
-                    {% endif %}
-                    {% if page.categories != empty %}
-                        in {{ page.categories | array_to_sentence_string }}
-                    {% endif %}
-                </div>
+            <article>
+                {% if page.link %}  
+                    <header>Link: <a href="{{ page.link }}">{{ page.title }}</a></header>
+                    <div class="infotoppost">
+                        <a href="{{ site.domain }}{{ page.url }}">{{ page.date | date_to_long_string }}</a>
+                        {% if page.author %}
+                            by {{ page.author }}
+                        {% endif %}
+                        {% if page.categories != empty %}
+                            in {{ page.categories | array_to_sentence_string }}
+                        {% endif %}
+                    </div>
 
-                {{ content }}
+                    {{ content }}
 
-                <div class="infobotpost">
-                    {% comment %} <hr class="style-two"/> {% endcomment %}
-                    {% if page.categories != empty %}Categories: {{ page.categories | array_to_sentence_string}}&nbsp;|&nbsp;{% endif %}{% if page.tags != empty %}Tags: {{ page.tags | array_to_sentence_string }}&nbsp;|&nbsp;{% endif %}Words: {{ content | number_of_words }}
-                </div>
-                {% include comments.html %}
+                    <div class="infobotpost">
+                        {% comment %} <hr class="style-two"/> {% endcomment %}
+                        {% if page.categories != empty %}Categories: {{ page.categories | array_to_sentence_string}}&nbsp;|&nbsp;{% endif %}{% if page.tags != empty %}Tags: {{ page.tags | array_to_sentence_string }}&nbsp;|&nbsp;{% endif %}Words: {{ content | number_of_words }}
+                    </div>
+                    {% include comments.html %}
+                {% else %}
+                    <header><a href="{{ site.domain }}{{ page.url }}">{{ page.title }}</a></header>
+                    <div class="infotoppost">
+                        {{ page.date | date_to_long_string }}
+                        {% if page.author %}
+                            by {{ page.author }}
+                        {% endif %}
+                        {% if page.categories != empty %}
+                            in {{ page.categories | array_to_sentence_string }}
+                        {% endif %}
+                    </div>
+
+                    {{ content }}
+
+                    <div class="infobotpost">
+                        {% comment %} <hr class="style-two"/> {% endcomment %}
+                        {% if page.categories != empty %}Categories: {{ page.categories | array_to_sentence_string}}&nbsp;|&nbsp;{% endif %}{% if page.tags != empty %}Tags: {{ page.tags | array_to_sentence_string }}&nbsp;|&nbsp;{% endif %}Words: {{ content | number_of_words }}
+                    </div>
+                    {% include comments.html %}
+
+                {% endif %}
             </article>

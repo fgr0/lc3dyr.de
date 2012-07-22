@@ -6,21 +6,46 @@ blog: true
     {% for post in site.posts %}
         {% assign content = post.content %}
             <article>
-                <header><a href="{{ site.domain }}{{ post.url }}">{{ post.title }}</a></header>
-                <div class="infotoppost">
-                    {{ post.date | date_to_long_string }}
-                    {% if post.author %}
-                        by {{ post.author }}
-                    {% endif %}
-                    {% if post.categories != empty %}
-                        in {{ post.categories | array_to_sentence_string }}
-                    {% endif %}
-                </div>
+                {% if post.link %}
+                    <header>Link: <a href="{{ post.link }}">{{ post.title }}</a></header>
+                    <div class="infotoppost">
+                        <a href="{{ site.domain }}{{ post.url }}">{{ post.date | date_to_long_string }}</a>
+                        {% if post.author %}
+                            by {{ post.author }}
+                        {% endif %}
+                        {% if post.categories != empty %}
+                            in {{ post.categories | array_to_sentence_string }}
+                        {% endif %}
+                    </div>
 
-                {{ content }}
+                    {{ content }}
 
-                <div class="infobotpost">
-                    &nbsp;
-                </div>
+                    <div class="infobotpost">
+                        &nbsp;
+                    </div>
+                {% else %}
+                    <header><a href="{{ site.domain }}{{ post.url }}">{{ post.title }}</a></header>
+                    <div class="infotoppost">
+                        {{ post.date | date_to_long_string }}
+                        {% if post.author %}
+                            by {{ post.author }}
+                        {% endif %}
+                        {% if post.categories != empty %}
+                            in {{ post.categories | array_to_sentence_string }}
+                        {% endif %}
+                    </div>
+
+                    {{ content }}
+
+                    <div class="infobotpost">
+                        {% case post.comment_count %}
+                        {% when 0 %}
+                        {% when 1 %}
+                            1 Comment
+                        {% else %}
+                            {{post.comment_count}} Comments
+                        {% endcase %}
+                    </div>
+                {% endif %}
             </article>
     {% endfor %}

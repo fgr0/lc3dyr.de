@@ -4,7 +4,7 @@ blog: true
 ---
             <article>
                 {% if page.link %}  
-                    <header>Link: <a href="{{ page.link }}">{{ page.title }}</a></header>
+                    <header>Link: <a href="{{ page.link }}"><h1>{{ page.title }}</h1></a></header>
                     <div class="infotoppost">
                         <a href="{{ site.domain }}{{ page.url }}">{{ page.date | date_to_long_string }}</a>
                         {% if page.author %}
@@ -23,7 +23,7 @@ blog: true
                     </div>
                     {% include comments.html %}
                 {% else %}
-                    <header><a href="{{ site.domain }}{{ page.url }}">{{ page.title }}</a></header>
+                    <header><a href="{{ site.domain }}{{ page.url }}"><h1>{{ page.title }}</h1></a></header>
                     <div class="infotoppost">
                         {{ page.date | date_to_long_string }}
                         {% if page.author %}

@@ -7,7 +7,7 @@ blog: true
         {% assign content = post.content %}
             <article>
                 {% if post.link %}
-                    <header>Link: <a href="{{ post.link }}">{{ post.title }}</a></header>
+                    <header><h1>Link: <a href="{{ post.link }}">{{ post.title }}</a></h1></header>
                     <div class="infotoppost">
                         <a href="{{ site.domain }}{{ post.url }}">{{ post.date | date_to_long_string }}</a>
                         {% if post.author %}
@@ -24,7 +24,7 @@ blog: true
                         &nbsp;
                     </div>
                 {% else %}
-                    <header><a href="{{ site.domain }}{{ post.url }}">{{ post.title }}</a></header>
+                    <header><a href="{{ site.domain }}{{ post.url }}"><h1>{{ post.title }}</h1></a></header>
                     <div class="infotoppost">
                         {{ post.date | date_to_long_string }}
                         {% if post.author %}

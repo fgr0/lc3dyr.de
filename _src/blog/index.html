@@ -38,12 +38,19 @@ blog: true
                     {{ content }}
 
                     <div class="infobotpost">
+                        <a class="FlattrButton" style="display:none;"
+                            title="{{ post.title }}"
+                            data-flattr-tags="text"
+                            data-flattr-category="text"
+                            href="{{ site.domain }}{{ post.url }}">
+                            {{ post.flattrdesc }}
+                        </a>
                         {% case post.comment_count %}
                         {% when 0 %}
                         {% when 1 %}
-                            1 Comment
+                            &nbsp;| 1 Comment
                         {% else %}
-                            {{post.comment_count}} Comments
+                            &nbsp;| {{post.comment_count}} Comments
                         {% endcase %}
                     </div>
                 {% endif %}

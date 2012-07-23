@@ -107,16 +107,16 @@ Ein Jekyll-Projekt ist letztenendes nichts anderes als eine Bestimmte Ordnerstru
 
 Die Struktur ist eigentlich ziemlich selbsterklärend
 
-### `_config.yml`
+### _config.yml
 In der `_config.yml` sind die [Einstellungen][WikiJekyllConfig] für Jekyll gespeichert. Unter anderem wo die Webseite erstellt werden soll, oder ob Jekyll einen Lokalen Entwicklungswebserver starten soll. 
 
-### `_includes/`
-In diesem Ordner liegen häufig verwendete Stückchen einer Seite, welche mithilfe von `{% raw %}{% include file.ext %}{% endraw %}` in jede Datei eingebunden werden können. Zum Beispiel eine Navigation, welche auf jeder Seite ist.
+### _includes/
+In diesem Ordner liegen häufig verwendete Stückchen einer Seite, welche mithilfe von z.B: `{% raw %}{% include file.ext %}{% endraw %}` in jede Datei eingebunden werden können. Zum Beispiel eine Navigation, welche auf jeder Seite ist.
 
-### `_layouts/`
+### _layouts/
 Hier liegen die Templates der Webseite. Jede Datei und jeder Posts muss angeben, in welches Template er eingebunden werden soll.
 
-### `_posts/`
+### _posts/
 Hier liegen die einzelnen Blogposts der Seite. Jekyll generiert für jeden dieser Posts eine Seite mit angegebenen Layout und stellt eine Liste zur verfügung, mit der man z.B. die letzten 10 Beiträge auf einer Startseite anzeigen kann.
 
 ### Der Rest

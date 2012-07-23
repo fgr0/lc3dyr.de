@@ -1,5 +1,13 @@
+code {background-color:#222424;color:#93a1a1;border:1px solid black;padding: 2px 4px;line-height:+2;font-size:11pt;}
+pre code {
+    border: none;
+}
+pre {
+    padding: 10px 10px;border: 1px solid black;
+    background-color:#222424;
+}
 .highlight{background-color:#222424;color:#93a1a1;width:100%;}
-.highlight pre{padding: 10px 10px;}
+.highlight pre{padding: 10px 10px;border: 1px solid black;}
 .highlight .c{color:#586e75 !important;font-style:italic !important}
 .highlight .cm{color:#586e75 !important;font-style:italic !important}
 .highlight .cp{color:#586e75 !important;font-style:italic !important}

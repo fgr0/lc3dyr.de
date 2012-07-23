@@ -52,6 +52,10 @@ body {
     font-size: 10pt;
     padding-top:0.5em;
     padding-bottom:50px;
+    vertical-align: top;
+}
+.FlattrButton {
+    vertical-align: bottom;
 }
 
 .front {

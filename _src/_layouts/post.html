@@ -38,15 +38,24 @@ blog: true
 
                     <div class="infobotpost">
                         {% comment %} <hr class="style-two"/> {% endcomment %}
+                        {% if page.categories != empty %}
+                            Categories: {{ page.categories | category_links }}
+                            |
+                        {% endif %}{% if page.tags != empty %}
+                            Tags: {{ page.tags | array_to_sentence_string }}
+                            |
+                        {% endif %}
+                        Words: {{ content | number_of_words }}
+                        <br/><br/>
                         <a class="FlattrButton" style="display:none;"
                             title="{{ page.title }}"
                             data-flattr-tags="text"
                             data-flattr-category="text"
+                            data-flattr-description="{{ content | truncatewords:50 }}"
                             href="{{ site.domain }}{{ page.url }}">
-                            {{ page.flattrdesc }}
                         </a>
-                        {% if page.categories != empty %}&nbsp;|&nbsp;Categories: {{ page.categories | array_to_sentence_string}}&nbsp;|&nbsp;{% endif %}{% if page.tags != empty %}Tags: {{ page.tags | array_to_sentence_string }}&nbsp;|&nbsp;{% endif %}Words: {{ content | number_of_words }}
                     </div>
+
                     {% include comments.html %}
 
                 {% endif %}

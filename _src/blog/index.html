@@ -42,8 +42,8 @@ blog: true
                             title="{{ post.title }}"
                             data-flattr-tags="text"
                             data-flattr-category="text"
+                            data-flattr-description="{{ content | truncatewords:50 }}"
                             href="{{ site.domain }}{{ post.url }}">
-                            {{ post.flattrdesc }}
                         </a>
                         {% case post.comment_count %}
                         {% when 0 %}

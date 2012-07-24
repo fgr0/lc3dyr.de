@@ -11,7 +11,7 @@ blog: true
                             by {{ page.author }}
                         {% endif %}
                         {% if page.categories != empty %}
-                            in {{ page.categories | array_to_sentence_string }}
+                            in {{ page.categories | category_links }}
                         {% endif %}
                     </div>
 
@@ -30,7 +30,7 @@ blog: true
                             by {{ page.author }}
                         {% endif %}
                         {% if page.categories != empty %}
-                            in {{ page.categories | array_to_sentence_string }}
+                            in {{ page.categories | category_links }}
                         {% endif %}
                     </div>
 

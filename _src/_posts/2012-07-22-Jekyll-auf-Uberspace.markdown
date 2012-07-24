@@ -2,7 +2,7 @@
 layout: post
 categories: [Coding, Uberspace]
 tags: [Uberspace, Coding, Jekyll, Blog, Tutorial, Git]
-published: true
+published: false
 ---
 
 Dieser Blog ist eine statische Webseite, generiert mit [Jekyll][] und gehostet auf [Uberspace][]. Das heist, (fast) kein PHP, definitiv keine Datenbank, keine Seite, die erst bei Aufruf generiert werden muss. Man verspricht sich davon schnellere, belastbarere Seiten. Alles was man braucht ist eigentlich ein Webserver und irgendein Computer auf dem Ruby oder Python installiert ist. Bei Uberspace liegt beides vorinstalliert mit dabei -- die perfekte Nerdumgebung für eine Nerdsoftware die Nerdwebseiten generiert.

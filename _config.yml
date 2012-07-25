@@ -14,6 +14,7 @@ category_dir:  blog/categories/
 # custom Variables
 name: Lawn of laerador
 description: "(:"
+author: laerador
 domain: "http://lc3dyr.de"
 url: "http://lc3dyr.de"
 refresh: 0

@@ -20,9 +20,7 @@
 
 [WikiJekyll]: https://github.com/mojombo/jekyll/wiki
 [WikiJekyllSites]: https://github.com/mojombo/jekyll/wiki/Sites
-[WikiJekyllTemplate]: https://github.com/mojombo/jekyll/wiki/template-data
-	"Jekyll Wiki: Template Data"
-[WikiJekyllConfig]: https://github.com/mojombo/jekyll/wiki/Configuration
-	"Jekyll Wiki: Configuration"
+[WikiJekyllTemplate]: https://github.com/mojombo/jekyll/wiki/template-data "Jekyll Wiki: Template Data"
+[WikiJekyllConfig]: https://github.com/mojombo/jekyll/wiki/Configuration "Jekyll Wiki: Configuration"
 
 [localhost:4000]: localhost:4000

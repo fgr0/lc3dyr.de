@@ -10,6 +10,4 @@ Da habe ich es doch endlich geschafft, einen Funktionstüchtigen Blog zu erstell
 
 Es fehlt nämlich noch ziemlich viel. Es gibt noch keine Navigation, die beiden Seiten über mich sind noch nicht gefüllt und hier und da fehlen noch ein paar Kleinigkeiten, wie z.B. ein Kommentarsystem. Aber ich wollte zumindest schon mal einen Sinnvollen Beitrag haben, wenn die Seite schon online ist. 
 
-Wär super, wenn ihr mir noch Ideen, Wünsche, Wunder, etc. zukommen lassen würdet - am besten via [Twitter][] so lange es noch keine Kommentare gibt.
-
-[Twitter]: http://twitter.com/laerador
+Wär super, wenn ihr mir noch Ideen, Wünsche, Wunder, etc. zukommen lassen würdet - am besten via [Twitter][TwitterMe] so lange es noch keine Kommentare gibt.

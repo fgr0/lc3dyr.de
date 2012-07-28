@@ -156,3 +156,18 @@ input[type=search] {
     word-spacing: 20px;               
 }
 
+table {
+    width:80%;
+    margin: 0 auto;
+    min-width: 300px;
+}
+
+td.text{
+    vertical-align: top;
+    padding: 10px 25px;
+}
+
+.nopadding {
+    padding-top:0;
+    margin-top:0;
+}

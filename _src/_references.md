@@ -17,10 +17,16 @@
 [Pelican]: http://pelican.notmyidea.org/en/2.8/index.html
 [Cyrax]: https://github.com/piranha/cyrax
 [Liquid]: https://github.com/shopify/liquid/wiki/liquid-for-designers
-
 [WikiJekyll]: https://github.com/mojombo/jekyll/wiki
 [WikiJekyllSites]: https://github.com/mojombo/jekyll/wiki/Sites
 [WikiJekyllTemplate]: https://github.com/mojombo/jekyll/wiki/template-data "Jekyll Wiki: Template Data"
 [WikiJekyllConfig]: https://github.com/mojombo/jekyll/wiki/Configuration "Jekyll Wiki: Configuration"
 
 [localhost:4000]: localhost:4000
+
+[Hiss]: http://collect3.com.au/hiss/
+[iAW]: http://www.iawriter.com/
+
+[MacPorts]: http://www.macports.org/
+[MacOS]: http://www.apple.com/de/osx/
+[MacOSNew]: http://www.apple.com/osx/whats-new/features.html

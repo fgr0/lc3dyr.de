@@ -25,7 +25,7 @@ $DATE_FORMAT = "j. M Y, H:i";
 // the From: address.  Whilst you could, in theory, change this to take the
 // address out of the form, it's *incredibly* highly recommended you don't,
 // because that turns you into an open relay, and that's not cool.
-$EMAIL_ADDRESS = "laerador@lc3dyr.de";
+$EMAIL_ADDRESS = "comments@lc3dyr.de";
 
 // The subject of all blog comment e-mails.  If you're running lots of these,
 // you might want to customise it, or if you were running a generic comment

@@ -80,18 +80,18 @@ aside .atop {
 }
 
 aside .atop .ntop {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     width: 250px;
 }
 
 /* Navigation */
 nav {
-    position:relative;
+    /* position:relative; */
     z-index: 1000;
     font-family: "Courier";
     text-align: left;
     text-shadow: none;
-    width: 250px;
+    width: 350px;
     margin: 0 auto;
 }
 
@@ -153,7 +153,7 @@ blockquote.xkcd {
 div.xkcd {
     width: 450px;
     margin: 0 auto;
-    padding-left: 65px;
+    /* padding-left: 65px; */
 }
 
 input[type=search] { 

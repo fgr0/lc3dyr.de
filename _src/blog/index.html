@@ -9,7 +9,7 @@ blog: true
                 {% if post.link %}
                     <header><h1>Link: <a href="{{ post.link }}">{{ post.title }}</a></h1></header>
                     <div class="infotoppost">
-                        <a href="{{ site.domain }}{{ post.url }}">{{ post.date | date_to_long_string }}</a>
+                        <a style="color:gray" href="{{ site.domain }}{{ post.url }}">{{ post.date | date_to_long_string }}</a>
                         {% if post.author %}
                             by {{ post.author }}
                         {% endif %}

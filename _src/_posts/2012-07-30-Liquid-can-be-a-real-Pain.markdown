@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: [Coding]
+categories: [Link, Coding]
 tags: [Liquid, Sort, Unmöglich, Jekyll]
 title: Liquid kann echt anstrengend sein
 link: "http://dseifried.wordpress.com/2011/11/25/jekyll-yaml-front-matter-and-the-liquid-templating-system/"

@@ -16,8 +16,22 @@
                     <div class="categories">
                     Categories:
                     <ul>
-                        {% for category in site.categories %}
-                            <li><a href="/{{ site.category_dir }}/{{ category | first}}">{{ category | first }}</a></li>
+                        {% comment %} Some magic for Sorted Categories {% endcomment %}                    
+                        {% capture get_items %}
+                            {% for cat in site.categories %}
+                                {{ cat | first }}
+                            {% endfor %}
+                        {% endcapture %}
+                        {% capture num_words %}
+                            {{ get_items | split:' ' | sort | join:' ' | number_of_words }}
+                        {% endcapture %}
+
+                        {% for item in (1..num_words) %}
+                            {% capture this_word %}
+                            {{ get_items | split:' ' | sort | join:' ' | truncatewords:item | remove:'...' | split:' ' | last }}
+                            {% endcapture %}
+
+                            <li><a href="/{{ site.category_dir }}/{{ this_word }}">{{ this_word }}</a></li>
                         {% endfor %}
                     </ul>
                     </div>

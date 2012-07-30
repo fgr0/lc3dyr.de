@@ -23,8 +23,11 @@ body {
     font-size: 128pt;
     font-family: Verdana, Tahoma, sans-serif;
     color: #343636;
-    text-shadow: 0 -1px 1px black, 0 1px 2px gray;
 }
+.imprint {
+    text-shadow: 0 -1px 1px black, 0 1px 1px gray;
+}
+
 .xkcd {
     text-align: left;
     text-transform: uppercase;

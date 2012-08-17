@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mac OS X 10.8 Mountain Lion
-categories: [Coding, Technologie]
+categories: [Coding,Apple]
 tags: ["Mac OS X", "Mountain Lion", "Lion", MacPorts, "iA Writer", Hiss, Update,
 Betriebssystem]
 ---

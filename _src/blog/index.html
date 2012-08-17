@@ -41,14 +41,13 @@ blog: true
                             data-flattr-tags="text"
                             data-flattr-category="text"
                             data-flattr-description=""
-                            href="{{ site.domain }}{{ post.url }}">
-                        </a>
+                            href="{{ site.domain }}{{ post.url }}"></a>
                         {% case post.comment_count %}
                         {% when 0 %}
                         {% when 1 %}
-                            &nbsp;| 1 Comment
+                            &nbsp;| <a href="{{ site.domain }}{{ post.url }}#comments">1 Comment</a>
                         {% else %}
-                            &nbsp;| {{post.comment_count}} Comments
+                            &nbsp;| <a href="{{ site.domain }}{{ post.url }}#comments">{{post.comment_count}} Comments</a>
                         {% endcase %}
                     </div>
                 {% endif %}

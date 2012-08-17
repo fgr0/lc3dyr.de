@@ -2,9 +2,9 @@
                     {% case page.comment_count %}
                     {% when 0 %}
                     {% when 1 %}
-                        <h3>1 Comment</h3>
+                        <h3><a name=comments>1 Comment</a></h3>
                     {% else %}
-                        <h3>{{page.comment_count}} Comments</h3>
+                        <h3><a name=comments>{{page.comment_count}} Comments</a></h3>
                     {% endcase %}
                     {% for c in page.comments %}
                         <br />
@@ -25,7 +25,7 @@
                         <input type="hidden" name="post_id" value="{{page.id}}" />
                         <input type="hidden" name="return_url" value="{{site.url}}{{page.url}}" />
                         <input type="text" size="25" name="name" /><label for="name">Name</label><br>
-                        <input type="text" size="25" name="email" /><label for="email">Email</label><br>
+                        {% comment %} <input type="text" size="25" name="email" /><label for="email">Email</label><br> {% endcomment %}
                         <textarea name="comment" rows="10" cols="60" ></textarea><br>
                         <input type="submit" name="" value="Submit Comment" />
                     </form>

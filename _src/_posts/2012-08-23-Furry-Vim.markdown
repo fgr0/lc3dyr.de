@@ -1,0 +1,49 @@
+---
+layout: post
+category: Hello World
+tags: [one, two, three]
+title: Furry Vim
+published: false
+---
+
+Wie viele vielleicht schon mitbekommen haben, benutze ich __Vim__ als
+meinen primären Texteditor. Und da ich ja kein Programmierer bin, mache
+ich damit eigentlich nur eine Sache: die __Vimconfig__ schreiben. Eben
+jene findet sich jetzt auf [Github][vimrc]. Aus der Readme:
+
+> _Furry-Vim_ is a modern Vim-Configuration File based around the Plugin-Manager
+[Vundle][]. Given some dependencies Furry-Vim can serve as an
+everything-you-need Configuration for your favorite Editor, it is easily
+extensible and customizable if you don't want to read through the 800 lines of
+the vimrc and it can also just be used to cherry-pick parts for your own
+personal Vim Configuration. 
+
+# The fluffiest Vim Configuration out there
+Ich benutze diese Config Tag für Tag und habe sie meinen Bedürfnissen
+angepasst. Aber das Ziel von __Furry Vim__ ist es eigentlich, dass wir
+eine vollumfassende Konfiguration, welche für jeden eine Brauchbare
+grundlage einer modernen Vimconfiguration zu schaffen. Gerade deshalb
+habe ich die `vimrc` an sich erweiterbar gemacht - so dass jeder für ein
+lokales System eigene Einstellungen machen kann, ohne das die Changes in
+einen Repo liegen müssen.
+
+Fühlt euch also frei eure Ideen oder grundsätzlichen Änderungen zu
+pushen. Vielleicht habt ihr Plugins die Sachen besser machen, als die
+die ich ausgesucht habe, oder ihr habt bessere Einstellungen für manche
+Optionen. Wie auch immer - beteiligt euch!
+
+# Flausch-Vim?
+Diese Vimconfiguration sollte nicht leichtfertig verwendet werden, sie
+setzt über 600 Zeilen Optionen für Vim. Man sollte vim "verstehen" und
+sich kurz mit der Config beschäftigen um zu verstehen was sie tut.
+(Allgemein sollte man sich mehr mit Vim beschäftigen (:  )
+
+Gerade für Vim-Einsteiger kann Vim selber verwirrend sein, wenn man sich
+dann noch mit den Tausenden Einstellungen beschäftigen muss, kann Vim
+einen schnell über den Kopf wachsen. Daher will ich über die nächste
+Zeit eine Einsteiger-vimrc schreiben, welche nicht so umfangreich ist,
+wie Furry-Vim, aber einem die Grundlagen einer Vimrc zeigt und nur
+einige Essentiellen Optionen setzt. Furry-Vim soll aber im gegensatz
+dazu Allumfassend sein, um Vim _flauschig_ zu machen :)
+
+[vimrc]: http://github.com/laerador/furry-vim.git

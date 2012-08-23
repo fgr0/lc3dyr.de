@@ -1,9 +1,8 @@
 ---
 layout: post
-category: Hello World
-tags: [one, two, three]
+categories: [Coding]
+tags: [vim, vimrc, github]
 title: Furry Vim
-published: false
 ---
 
 Wie viele vielleicht schon mitbekommen haben, benutze ich __Vim__ als

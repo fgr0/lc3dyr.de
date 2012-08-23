@@ -31,12 +31,13 @@ $EMAIL_ADDRESS = "comments@lc3dyr.de";
 // you might want to customise it, or if you were running a generic comment
 // handler you could take it out of the form, but really, who cares what your
 // comment e-mails are titled, as long as you can recognise it?
-$SUBJECT = "Blog comment received";
+$SUBJECT = "Blog comment received in " . $_POST["post_id"];
 
 // The contents of the following file (relative to this PHP file) will be
 // displayed after the comment is received.  Customise it to your heart's
 // content.
 $COMMENT_RECEIVED = "comment_received.html";
+
 
 /****************************************************************************
  * HERE BE CODE
@@ -45,6 +46,7 @@ $COMMENT_RECEIVED = "comment_received.html";
 $post_id = $_POST["post_id"];
 unset($_POST["post_id"]);
 $msg = "post_id: $post_id\n";
+$msg .= "comment_id: " . date() . "+" . time() . "\n"; 
 $msg .= "date: " . date($DATE_FORMAT) . "\n";
 
 foreach ($_POST as $key => $value) {

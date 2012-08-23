@@ -17,6 +17,8 @@ category_dir:  blog/categories/
 name: Lawn of laerador
 description: "(:"
 author: laerador
-domain: "http://lc3dyr.de"
-url: "http://lc3dyr.de"
+# domain: "http://lc3dyr.de"
+# url: "http://lc3dyr.de"
+domain: "localhost:4000"
+url: "localhost:4000"
 refresh: 0

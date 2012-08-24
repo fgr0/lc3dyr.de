@@ -44,6 +44,7 @@ blog: true
                             href="{{ site.domain }}{{ post.url }}"></a>
                         {% case post.comment_count %}
                         {% when 0 %}
+                            &nbsp;| <a href="{{ site.domain }}{{ post.url }}#comments">0 Comments</a>
                         {% when 1 %}
                             &nbsp;| <a href="{{ site.domain }}{{ post.url }}#comments">1 Comment</a>
                         {% else %}

@@ -18,6 +18,7 @@ the vimrc and it can also just be used to cherry-pick parts for your own
 personal Vim Configuration. 
 
 # The fluffiest Vim Configuration out there
+[![Picture of a Terminalwindow, showing a Vimwindow](/images/2012-08-09-furry-vim.png)](/images/2012-08-09-furry-vim.png)
 Ich benutze diese Config Tag für Tag und habe sie meinen Bedürfnissen
 angepasst. Aber das Ziel von __Furry Vim__ ist es eigentlich, dass wir
 eine vollumfassende Konfiguration, welche für jeden eine Brauchbare

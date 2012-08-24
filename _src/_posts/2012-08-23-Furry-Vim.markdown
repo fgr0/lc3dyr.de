@@ -11,7 +11,7 @@ ich damit eigentlich nur eine Sache: die __Vimconfig__ schreiben. Eben
 jene findet sich jetzt auf [Github][vimrc]. Aus der Readme:
 
 > _Furry-Vim_ is a modern Vim-Configuration File based around the Plugin-Manager
-[Vundle][]. Given some dependencies Furry-Vim can serve as an
+Vundle. Given some dependencies Furry-Vim can serve as an
 everything-you-need Configuration for your favorite Editor, it is easily
 extensible and customizable if you don't want to read through the 800 lines of
 the vimrc and it can also just be used to cherry-pick parts for your own

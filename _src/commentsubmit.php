@@ -44,24 +44,42 @@ $COMMENT_RECEIVED = "comment_received.html";
  ****************************************************************************/
 
 $post_id = $_POST["post_id"];
+$post_url = $_POST["post_url"];
 unset($_POST["post_id"]);
-$msg = "post_id: $post_id\n";
-$msg .= "comment_id: " . date() . "+" . time() . "\n"; 
-$msg .= "date: " . date($DATE_FORMAT) . "\n";
+unset($_POST["post_url"]);
 
 foreach ($_POST as $key => $value) {
-	if (strstr($value, "\n") != "") {
-		// Value has newlines... need to indent them so the YAML
-		// looks right
-		$value = str_replace("\n", "\n  ", $value);
-	}
-	// It's easier just to single-quote everything than to try and work
-	// out what might need quoting
-	$value = "'" . str_replace("'", "''", $value) . "'";
-	$msg .= "$key: $value\n";
+    if (strstr($value, "\n") != "") {
+        // Value has newlines...
+        // need to indent them, so the YAML looks right
+        $value = str_replace("\n", "\n ", $value);
+    }
+
+    // It's easier just to single-quote everything than to try and work
+    // out what might need quoting
+    $value = "'" . str_replace("'", "''", $value);
+    $_POST[$key] = $value;
 }
 
-if (mail($EMAIL_ADDRESS, $SUBJECT, $msg, "From: $EMAIL_ADDRESS"))
+$from_mail = $_POST["from_mail"];
+$name = $_POST["name"];
+$comment = $_POST["comment"];
+unset($_POST["from_mail"]);
+unset($_POST["name"]);
+unset($_POST["comment"]);
+
+
+// Create the msg content 
+$msg = ""
+$msg .= "post_id: $post_id\n";
+$msg .= "comment_id: " . date() . "+" . time() . "\n"; 
+$msg .= "date: " . date($DATE_FORMAT) . "\n";
+$msg .= "name: $name\n";
+$msg .= "comment: $comment";
+
+
+
+if (mail($EMAIL_ADDRESS, $SUBJECT, $msg, "From: $from_mail"))
 {
 	include $COMMENT_RECEIVED;
 }

@@ -3,11 +3,11 @@
 	<head> 
         <meta charset="utf-8" />
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<?php if (isset($_POST['return_url']))
+		<?php if (isset($_POST['post_url']))
 		{
-			$return_url = $_POST['return_url'];
+			$post_url = $_POST['post_url'];
 			$return_delay = 4; //Number of seconds to linger on this page before redirecting back to the static site
-			echo '<meta http-equiv="refresh" content="'.$return_delay.';url='.$return_url.'" />';
+			echo '<meta http-equiv="refresh" content="'.$return_delay.';url='.$post_url.'" />';
 		} ?>
 		<title>Comment Received</title> 
 
@@ -25,10 +25,10 @@
             <article>
                 <header><a href="">Comment Posted.</a></header>
 	<p>Thank you for your comment. It will be reviewed and published shortly.</p>
-	<?php if (isset($return_url))
+	<?php if (isset($post_url))
 	{
 		echo '<p>You are now returning to the page you were on. Click the link if you are not redirected automatically.</p>';
-		echo '<p><a href="'.$return_url.'">'.$return_url.'</a></p>';
+		echo '<p><a href="'.$post_url.'">'.$post_url.'</a></p>';
 	} ?>
             </article>
     

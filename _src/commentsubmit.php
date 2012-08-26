@@ -57,7 +57,7 @@ foreach ($_POST as $key => $value) {
 
     // It's easier just to single-quote everything than to try and work
     // out what might need quoting
-    $value = "'" . str_replace("'", "''", $value);
+    $value = "'" . str_replace("'", "''", $value) . "'";
     $_POST[$key] = $value;
 }
 
@@ -71,7 +71,7 @@ unset($_POST["comment"]);
 
 // Create the msg content 
 $msg = "post_id: $post_id\n";
-$msg .= "comment_id: " . date() . "+" . time() . "\n"; 
+$msg .= "comment_id: " . date("y-m-d+Hi") . "\n"; 
 $msg .= "date: " . date($DATE_FORMAT) . "\n";
 $msg .= "name: $name\n";
 $msg .= "comment: $comment";

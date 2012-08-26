@@ -12,7 +12,7 @@
                         <br />
                         <div class="comment {% cycle 'odd', 'even' %}">
                             <p class="comment_header">
-                            From: <span class="deeper"><a href="{{ c.comment_id }}">{{c.name}}</a></span> | <span class="comment_date">{{ c.date }}</span>
+                                From: <span class="deeper"><a href="{{ c.comment_id }}">{{c.name}}</a></span> | <span class="comment_date">{{ c.date }}</span><span style="text-align:right">Reply-To</span>
                             </p>
                             <p>
                             {{ c.comment | newline_to_br }}

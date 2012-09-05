@@ -76,6 +76,7 @@ $msg .= "comment_id: " . date("y-m-d+Hi") . "\n";
 $msg .= "date: " . date($DATE_FORMAT) . "\n";
 $msg .= "name: $name\n";
 $msg .= "comment: $comment";
+$msg .= "email: $from_mail";
 
 
 

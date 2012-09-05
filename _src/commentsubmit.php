@@ -69,7 +69,7 @@ unset($_POST["from_mail"]);
 unset($_POST["name"]);
 unset($_POST["comment"]);
 
-$from = "From: $name " . "<$from_mail>";
+$from = "From: " . $name . " " . "<" . $from_mail . ">";
 
 // Create the msg content 
 $msg = "post_id: $post_id\n";

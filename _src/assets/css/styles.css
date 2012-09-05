@@ -193,10 +193,18 @@ a:hover {
     font-size: 12pt;
 }
 input, textarea {
-    background-color: silver;
-    border: 1px solid gray;
+    background-color: #222424;
+    color:silver;
+    border: 1px solid black;
     padding:2px;
 } 
+input.button {
+    background-color:transparent;
+    border: none;
+}
+input.button:hover {
+    color: #00B4CC;
+}
 label {
     font-size:10pt;
     color: gray;

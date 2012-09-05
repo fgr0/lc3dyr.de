@@ -63,10 +63,10 @@ foreach ($_POST as $key => $value) {
     $_POST[$key] = $value;
 }
 
-$name = $_POST["name"];
+$name = $_POST["nameasdf"];
 $comment = $_POST["comment"];
 unset($_POST["from_mail"]);
-unset($_POST["name"]);
+unset($_POST["nameasdf"]);
 unset($_POST["comment"]);
 
 

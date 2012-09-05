@@ -63,13 +63,13 @@ foreach ($_POST as $key => $value) {
     $_POST[$key] = $value;
 }
 
-$name = $_POST["nameasdf"];
+$name = $_POST["name"];
 $comment = $_POST["comment"];
 unset($_POST["from_mail"]);
-unset($_POST["nameasdf"]);
+unset($_POST["name"]);
 unset($_POST["comment"]);
 
-
+$from = "From: $name " . "<$from_mail>";
 // Create the msg content 
 $msg = "post_id: $post_id\n";
 $msg .= "comment_id: " . date("y-m-d+Hi") . "\n"; 

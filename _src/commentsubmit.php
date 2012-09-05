@@ -45,6 +45,8 @@ $COMMENT_RECEIVED = "comment_received.html";
 
 $post_id = $_POST["post_id"];
 $post_url = $_POST["post_url"];
+$from_mail = $_POST["from_mail"];
+unset($_POST["from_mail"]);
 unset($_POST["post_id"]);
 unset($_POST["post_url"]);
 
@@ -61,7 +63,6 @@ foreach ($_POST as $key => $value) {
     $_POST[$key] = $value;
 }
 
-$from_mail = $_POST["from_mail"];
 $name = $_POST["name"];
 $comment = $_POST["comment"];
 unset($_POST["from_mail"]);

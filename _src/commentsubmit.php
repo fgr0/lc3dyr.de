@@ -45,10 +45,10 @@ $COMMENT_RECEIVED = "comment_received.html";
 
 $post_id = $_POST["post_id"];
 $post_url = $_POST["post_url"];
-$from_mail = $_POST["from_mail"];
-unset($_POST["from_mail"]);
+$mail = $_POST["email"];
 unset($_POST["post_id"]);
 unset($_POST["post_url"]);
+unset($_POST["email"]);
 
 foreach ($_POST as $key => $value) {
     if (strstr($value, "\n") != "") {
@@ -69,7 +69,7 @@ unset($_POST["from_mail"]);
 unset($_POST["name"]);
 unset($_POST["comment"]);
 
-$from = "From: " . $name . " " . "<" . $from_mail . ">";
+$from = "From: " . $name . " " . "<" . $mail . ">";
 
 // Create the msg content 
 $msg = "post_id: $post_id\n";

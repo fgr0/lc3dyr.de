@@ -204,6 +204,7 @@ input.button {
 }
 input.button:hover {
     color: #00B4CC;
+    cursor: pointer;
 }
 label {
     font-size:10pt;

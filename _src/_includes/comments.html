@@ -12,9 +12,7 @@
                         <br />
                         <div class="comment {% cycle 'odd', 'even' %}">
                             <p class="comment_header">
-                            From: <span class="deeper">{{c.name}}</span> | <span class="comment_date">{{ c.date }}</span>
-
-                            {{ c.post_id }}
+                                From: <span class="deeper"><a href="{{ c.comment_id }}">{{c.name}}</a></span> | <span class="comment_date">{{ c.date }}</span><span style="text-align:right">Reply-To</span>
                             </p>
                             <p>
                             {{ c.comment | newline_to_br }}
@@ -32,13 +30,13 @@
                             name="post_id" value="{{page.id}}" />
 
                         <input  type="hidden"
-                            name="return_url" value="{{site.url}}{{page.url}}" />
+                            name="post_url" value="{{site.url}}{{page.url}}" />
 
                         <input  type="text" 
                             size="25"
                             name="name" /><label for="name">Name</label><br>
 
-                        {% comment %} <input type="text" size="25" name="email" /><label for="email">Email</label><br> {% endcomment %}
+                        <input type="text" size="25" name="from_email" /><label for="email">Email (will not be published)</label><br>
 
                         <textarea name="comment"
                             rows="10"

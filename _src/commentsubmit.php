@@ -70,17 +70,17 @@ unset($_POST["name"]);
 unset($_POST["comment"]);
 
 $from = "From: $name " . "<$from_mail>";
+
 // Create the msg content 
 $msg = "post_id: $post_id\n";
 $msg .= "comment_id: " . date("y-m-d+Hi") . "\n"; 
 $msg .= "date: " . date($DATE_FORMAT) . "\n";
 $msg .= "name: $name\n";
 $msg .= "comment: $comment";
-$msg .= "email: $from_mail";
 
 
 
-if (mail($EMAIL_ADDRESS, $SUBJECT, $msg, "From: $name <$from_mail>"))
+if (mail($EMAIL_ADDRESS, $SUBJECT, $msg, $from))
 {
 	include $COMMENT_RECEIVED;
 }

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Neues iTerm-Fenster überall per Tastatur öffnen
-categories: ["Apple",Coding]
+categories: [Apple,Coding]
 tags: ["Mac OS X", "Applescript", Script, "Automator", "Shell", "Keyboard", "Shortcuts"]
 ---
 

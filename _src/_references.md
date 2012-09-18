@@ -2,6 +2,7 @@
 
 [Twitter]: http://twitter.com
 [TwitterMe]: http://twitter.com/laerador
+[lc3dyr]: http://lc3dyr.de/
 
 [gituber]: http://uberspace.de/dokuwiki/development:git#git_als_server
 [githublc]: https://github.com/laerador/lc3dyr.de

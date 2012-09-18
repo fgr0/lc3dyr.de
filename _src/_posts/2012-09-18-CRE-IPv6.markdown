@@ -1,0 +1,18 @@
+---
+layout: post
+categories: [Uberspace, Kultur, Link]
+tags: [Uberspace, IPv6, Chaosradio, Podcast]
+title: CRE197 IPv6  
+link: "http://cre.fm/cre197" 
+---
+
+Mal wieder ein wunderbarer Podcast von [Tim][] mit allem was ihr über IPv6 wissen wolltet. 
+
+> Im Gespräch mit Tim Pritlove erläutert Clemens Schrimpe die
+> notwendigen Grundlagen der Internetkommunikation und zeigt auf, welche
+> konkreten Änderungen sich durch die Einführung von IPv6 ergeben,
+> welche Möglichkeiten heute schon bestehen, davon zu profitieren und
+> welche Vorkehrungen zu treffen sind, um einen reibungslosen Übergang
+> zu organisieren.
+
+Nebenbei in eigener Sache: [lc3dyr][] ist dank den Jungs von [Uberspace][] selbstverständlich auch schon unter IPv6 zu erreichen ;)

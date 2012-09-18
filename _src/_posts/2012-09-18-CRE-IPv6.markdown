@@ -16,3 +16,5 @@ Mal wieder ein wunderbarer Podcast von [Tim][] mit allem was ihr über IPv6 wiss
 > zu organisieren.
 
 Nebenbei in eigener Sache: [lc3dyr][] ist dank den Jungs von [Uberspace][] selbstverständlich auch schon unter IPv6 zu erreichen ;)
+
+[Tim]: http://tim.geekheim.de/
